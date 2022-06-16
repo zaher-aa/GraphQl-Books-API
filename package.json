@@ -1,0 +1,29 @@
+{
+  "name": "graphql-books-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/",
+    "start": "node ./src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaher-aa/GraphQl-Books-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaher-aa/GraphQl-Books-API/issues"
+  },
+  "homepage": "https://github.com/zaher-aa/GraphQl-Books-API#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
