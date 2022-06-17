@@ -1,4 +1,4 @@
-const app = require('./v1/app');
+const app = require('./v2/app');
 
 const port = app.get('port');
 
