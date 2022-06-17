@@ -17,7 +17,6 @@ module.exports = buildSchema(`
   input BookInput {
     name: String!
     authorId: Int!
-    author: AuthorInput!
   }
 
   input AuthorInput {
