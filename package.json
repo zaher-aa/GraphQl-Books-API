@@ -19,9 +19,14 @@
   },
   "homepage": "https://github.com/zaher-aa/GraphQl-Books-API#readme",
   "dependencies": {
+    "apollo-server-core": "^3.9.0",
+    "apollo-server-express": "^3.9.0",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-graphql": "^0.12.0",
-    "graphql": "^16.5.0"
+    "graphql": "^16.5.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"

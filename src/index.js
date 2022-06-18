@@ -1,5 +1,4 @@
-const app = require('./v2/app');
+const startApolloServer = require('./v3/app');
+const { typeDefs, resolvers } = require('./v3/graphql');
 
-const port = app.get('port');
-
-app.listen(port, () => console.log(`http://localhost:${port}`));
+startApolloServer(typeDefs, resolvers);
