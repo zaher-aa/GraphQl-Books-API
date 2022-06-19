@@ -16,6 +16,7 @@ module.exports = gql`
   type Book {
     id: ID!
     name: String!
+    pages: Int!
     authorId: ID!
     author: Author!
   }

@@ -1,5 +1,10 @@
-const { getBooks, getBook, addBook } = require('./books');
-const { getAuthors, getAuthor, addAuthor } = require('./authors');
+const { getBooks, getBook, addBook, getAuthorBooks } = require('./books');
+const {
+  getAuthors,
+  getAuthor,
+  addAuthor,
+  getBookAuthor,
+} = require('./authors');
 
 module.exports = {
   Query: {
@@ -11,5 +16,11 @@ module.exports = {
   Mutation: {
     addBook,
     addAuthor,
+  },
+  Author: {
+    books: getAuthorBooks,
+  },
+  Book: {
+    author: getBookAuthor,
   },
 };
