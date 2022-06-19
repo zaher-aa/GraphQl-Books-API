@@ -8,6 +8,11 @@ module.exports = gql`
     author(id: ID!): Author
   }
 
+  type Mutation {
+    addBook(input: BookInput!): Book
+    addAuthor(input: AuthorInput!): Author
+  }
+
   type Book {
     id: ID!
     name: String!
@@ -18,6 +23,18 @@ module.exports = gql`
   type Author {
     id: ID!
     name: String!
-    authorBooks: [Book!]!
+    age: Int!
+    books: [Book!]!
+  }
+
+  input BookInput {
+    name: String!
+    pages: Int!
+    authorId: ID!
+  }
+
+  input AuthorInput {
+    name: String!
+    age: Int!
   }
 `;
