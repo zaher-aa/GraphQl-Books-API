@@ -11,6 +11,8 @@ module.exports = gql`
   type Mutation {
     addBook(input: BookInput!): Book
     addAuthor(input: AuthorInput!): Author
+    deleteBook(id: ID!): Book
+    deleteAuthor(id: ID!): Author
   }
 
   type Book {

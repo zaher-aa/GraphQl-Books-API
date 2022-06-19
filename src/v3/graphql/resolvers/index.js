@@ -1,9 +1,16 @@
-const { getBooks, getBook, addBook, getAuthorBooks } = require('./books');
+const {
+  getBooks,
+  getBook,
+  addBook,
+  getAuthorBooks,
+  deleteBook,
+} = require('./books');
 const {
   getAuthors,
   getAuthor,
   addAuthor,
   getBookAuthor,
+  deleteAuthor,
 } = require('./authors');
 
 module.exports = {
@@ -16,6 +23,8 @@ module.exports = {
   Mutation: {
     addBook,
     addAuthor,
+    deleteBook,
+    deleteAuthor,
   },
   Author: {
     books: getAuthorBooks,
