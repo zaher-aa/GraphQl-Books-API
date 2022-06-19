@@ -4,12 +4,13 @@ const express = require('express');
 const http = require('http');
 const { sequelize } = require('./db/models');
 
-const startApolloServer = async (typeDefs, resolvers) => {
+const startApolloServer = async (typeDefs, resolvers, context) => {
   const app = express();
   const httpServer = http.createServer(app);
   const server = new ApolloServer({
     typeDefs,
     resolvers,
+    context,
     csrfPrevention: true,
     cache: 'bounded',
     plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],

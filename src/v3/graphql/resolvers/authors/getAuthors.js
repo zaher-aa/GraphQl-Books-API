@@ -1,8 +1,4 @@
-const {
-  models: { Author },
-} = require('../../../db/models');
-
-module.exports = async () => {
+module.exports = async (parent, args, { Author }) => {
   const authors = await Author.findAll();
   return authors;
 };
