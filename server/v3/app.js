@@ -19,8 +19,8 @@ const startApolloServer = async (typeDefs, resolvers, context) => {
   await server.start();
   await sequelize.sync();
   server.applyMiddleware({ app });
-  await new Promise((resolve) => httpServer.listen({ port: 3000 }, resolve));
-  console.log(`🚀 Server ready at http://localhost:3000${server.graphqlPath}`);
+  await new Promise((resolve) => httpServer.listen({ port: 5000 }, resolve));
+  console.log(`🚀 Server ready at http://localhost:5000${server.graphqlPath}`);
 };
 
 module.exports = startApolloServer;
